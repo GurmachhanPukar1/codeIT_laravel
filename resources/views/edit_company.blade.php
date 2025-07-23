@@ -1,7 +1,7 @@
 <x-layout>
     <section>
         <div class="container mx-auto px-4 py-10">
-            <h1 class="text-3xl font-bold text-center text-gray-800">Edit Company</h1>
+            <h1 class="text-3xl font-bold text-center text-gray-800">Edit Employee</h1>
 
             {{-- <form action="/update-company/{{ $company->id }}" method="post" class="mt-6"> --}}
             <form action="{{ route('update_company', $company->id) }}" method="post" enctype="multipart/form-data"

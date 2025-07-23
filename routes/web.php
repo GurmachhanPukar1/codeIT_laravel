@@ -22,14 +22,10 @@ Route::get('/edit-company/{id}',[CompanyController::class, "edit_company"])->nam
 Route::patch('/update-company/{id}',[CompanyController::class, "update_company"])->name("update_company");
 
 
-
-//Employess route
-Route::get('/employee',[EmployeeController::class,"employee"])->name("employee");
-
-
 //CRUD operation
 //Create - post
 //Read - get
 //Update - put/patch
 //Delete - delete
 
+Route::resource("employee",EmployeeController::class)->names('employee');
