@@ -24,6 +24,7 @@ class EmployeeController extends Controller
     {
         $companies = Company::all();
         return view('employee.create', compact('companies'));
+
     }
 
     /**

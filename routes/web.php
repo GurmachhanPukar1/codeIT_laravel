@@ -1,7 +1,9 @@
 <?php
 
+use App\Http\Controllers\CEOController;
 use App\Http\Controllers\CompanyController;
 use App\Http\Controllers\EmployeeController;
+use App\Http\Controllers\ManagerController;
 use App\Http\Controllers\PageController;
 use App\Models\Company;
 use Illuminate\Http\Request;
@@ -29,3 +31,6 @@ Route::patch('/update-company/{id}',[CompanyController::class, "update_company"]
 //Delete - delete
 
 Route::resource("employee",EmployeeController::class)->names('employee');
+
+Route::resource("manager",ManagerController::class)->names('manager');
+

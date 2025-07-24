@@ -9,7 +9,7 @@
                     aria-label="Add New Employee">
                     Add New Employee
                 </a>
-            </div>php
+            </div>
 
             <div class="mt-8 overflow-x-auto">
                 <table class="w-full text-sm text-gray-700 bg-white rounded-xl shadow-lg">
