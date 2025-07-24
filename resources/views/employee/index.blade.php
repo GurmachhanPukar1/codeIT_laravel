@@ -9,7 +9,7 @@
                     aria-label="Add New Employee">
                     Add New Employee
                 </a>
-            </div>
+            </div>php
 
             <div class="mt-8 overflow-x-auto">
                 <table class="w-full text-sm text-gray-700 bg-white rounded-xl shadow-lg">
@@ -19,7 +19,7 @@
                             <th class="border border-gray-200 p-4">Name</th>
                             <th class="border border-gray-200 p-4">Email</th>
                             <th class="border border-gray-200 p-4">Phone</th>
-                            <th class="border border-gray-200 p-4">Company ID</th>
+                            <th class="border border-gray-200 p-4">Company</th>
                             <th class="border border-gray-200 p-4">Action</th>
                         </tr>
                     </thead>
@@ -31,7 +31,7 @@
                                 <td class="border border-gray-200 p-4">{{ $employee->name }}</td>
                                 <td class="border border-gray-200 p-4">{{ $employee->email }}</td>
                                 <td class="border border-gray-200 p-4">{{ $employee->phone }}</td>
-                                <td class="border border-gray-200 p-4">{{ $employee->company_id }}</td>
+                                <td class="border border-gray-200 p-4">{{ $employee->company->name }}</td>
 
                                 <td class="border border-gray-200 p-4 text-center">
                                     <div class="flex justify-center gap-3">

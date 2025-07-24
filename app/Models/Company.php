@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 class Company extends Model
 {
 
-    public function comments(): HasMany
+    public function employess(): HasMany
     {
         return $this->hasMany(Employee::class);
     }
